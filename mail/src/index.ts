@@ -1,10 +1,14 @@
 import '../@types/Gjs/index'
 
-const http = require('http');
+// const console = require('console');
 
-http.get('http://www.hahaha.de/witze/zufallswitz.txt.php', (resp) => {
-  console.log(resp)
-});
+// const http = require('http');
+
+// http.get('http://www.hahaha.de/witze/zufallswitz.txt.php', (resp) => {
+//   console.log(resp)
+// });
+
+console.log('hello world');
 
 const test = '';
 
@@ -21,3 +25,4 @@ win.add(new Gtk.Label({ label: 'Hello Gtk+' }))
 
 win.show_all()
 Gtk.main()
+

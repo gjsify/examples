@@ -4,25 +4,20 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "npm run build && gjs ./dist/bundle.js",
+    "start": "npm run build && gjs ./dist/index.js",
     "build": "gulp",
+    "watch": "gulp watch",
     "build:types": "ts-for-gir generate Gtk-3.0 WebKit2-4.0 -e gjs",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Pascal Garber <pascal@artandcode.studio>",
   "license": "MIT",
-  "dependencies": {
-    "cgjs": "^0.1.32",
-    "gulp-uglify": "^3.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-typescript": "^7.8.3",
-    "@rollup/plugin-commonjs": "^11.0.2",
-    "@rollup/plugin-node-resolve": "^7.0.0",
-    "@rollup/plugin-sucrase": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^2.15.0",
     "@typescript-eslint/parser": "^2.15.0",
     "babelify": "^10.0.0",
