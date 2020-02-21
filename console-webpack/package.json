@@ -1,0 +1,22 @@
+{
+  "name": "gjs-console-browserify-example",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run build && gjs ./dist/index.js",
+    "build": "webpack",
+    "watch": "npm run build -- --watch",
+    "link": "npm link console-browserify"
+  },
+  "author": "Pascal Garber <pascal@artandcode.studio>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "terser-webpack-plugin": "^2.3.5",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
